@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Color Guessing Game</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Kablammo&family=Quicksand:wght@300..700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <article>
+      <header>
+        <h1>
+          <span>
+            <span>C</span><span>o</span><span>l</span><span>o</span
+            ><span>r</span>
+          </span>
+          <span>
+            <span>G</span><span>u</span><span>e</span><span>s</span
+            ><span>s</span><span>i</span><span>n</span><span>g</span>
+          </span>
+          <span><span>g</span><span>a</span><span>m</span><span>e</span></span>
+        </h1>
+      </header>
+      <main>
+        <div class="color-box" data-testid="colorBox"></div>
+        <section class="game-info">
+          <p data-testid="gameStatus">
+            <strong>Game Status:</strong>
+            <span id="game-status"></span>
+          </p>
+          <p data-testid="score">
+            <strong>Score:</strong>
+            <span id="score">0</span>
+          </p>
+        </section>
+
+        <section class="game-colors">
+          <h3 data-testid="gameInstructions" class="game-instructions">
+            Guess the correct color!
+          </h3>
+          <div class="color-options"></div>
+        </section>
+        <button class="new-game" data-testid="newGameButton">New Game</button>
+      </main>
+    </article>
+    <script src="./script.js"></script>
+  </body>
+</html>

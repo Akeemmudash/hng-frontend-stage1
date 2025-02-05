@@ -1,0 +1,193 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Quicksand", serif;
+  display: flex;
+  justify-content: center;
+  min-height: 100vh;
+  margin: 0;
+  background: url(./assets/color-bg.jpg);
+  background-position: center bottom;
+  background-size: cover;
+}
+
+article {
+  width: clamp(280px, 100%, 680px);
+  margin: 60px auto;
+  padding: 10px 30px;
+  border-radius: 40px;
+}
+h1 {
+  margin-bottom: 20px;
+  font-size: clamp(25px, 4vw, 40px);
+  font-family: "Kablammo", serif;
+  letter-spacing: 0.15em;
+  text-align: center;
+}
+h1 span {
+  text-wrap: nowrap;
+}
+h1 > span > span {
+  display: inline-block;
+  font-size: 2rem;
+  font-weight: bold;
+  animation: colorChange 5s ease infinite;
+}
+
+@keyframes colorChange {
+  0% {
+    color: red;
+  }
+  25% {
+    color: blue;
+  }
+  50% {
+    color: green;
+  }
+  75% {
+    color: orange;
+  }
+  100% {
+    color: purple;
+  }
+}
+
+h1 span > span:nth-child(1) {
+  animation-delay: 0.2s;
+}
+h1 span > span:nth-child(2) {
+  animation-delay: 0.4s;
+}
+h1 span > span:nth-child(3) {
+  animation-delay: 0.6s;
+}
+h1 span > span:nth-child(4) {
+  animation-delay: 0.8s;
+}
+h1 span > span:nth-child(5) {
+  animation-delay: 1s;
+}
+h1 span:nth-child(2) > span:nth-child(1) {
+  animation-delay: 1.2s;
+}
+h1 span:nth-child(2) > span:nth-child(2) {
+  animation-delay: 1.4s;
+}
+h1 span:nth-child(2) > span:nth-child(3) {
+  animation-delay: 1.6s;
+}
+h1 span:nth-child(2) > span:nth-child(4) {
+  animation-delay: 1.8s;
+}
+h1 span:nth-child(2) > span:nth-child(5) {
+  animation-delay: 2s;
+}
+h1 span:nth-child(2) > span:nth-child(6) {
+  animation-delay: 2.2s;
+}
+h1 span:nth-child(2) > span:nth-child(7) {
+  animation-delay: 2.4s;
+}
+h1 span:nth-child(2) > span:nth-child(8) {
+  animation-delay: 2.6s;
+}
+h1 span:nth-child(3) > span:nth-child(1) {
+  animation-delay: 2.8s;
+}
+h1 span:nth-child(3) > span:nth-child(2) {
+  animation-delay: 3s;
+}
+h1 span:nth-child(3) > span:nth-child(3) {
+  animation-delay: 3.2s;
+}
+h1 span:nth-child(3) > span:nth-child(4) {
+  animation-delay: 3.4s;
+}
+h1 span:nth-child(3) > span:nth-child(5) {
+  animation-delay: 3.6s;
+}
+h1 span:nth-child(3) > span:nth-child(6) {
+  animation-delay: 3.8s;
+}
+
+.color-box {
+  aspect-ratio: 7/5;
+  background-color: red;
+  border-radius: 10px;
+  border-style: groove;
+  margin: 40px auto;
+}
+.game-info {
+  margin-bottom: 15px;
+}
+.game-instructions {
+  margin-bottom: 20px;
+}
+
+.game-colors,
+.game-info {
+  background-color: #ffffff;
+  padding: 15px;
+  border-radius: 10px;
+  box-shadow: rgba(0, 0, 0, 0.05) 0px 0px 0px 1px;
+}
+
+.fade {
+  animation: fadeOut 0.5s ease-in-out;
+}
+@keyframes fadeOut {
+  0% {
+    opacity: 0.2;
+  }
+  50% {
+    opacity: 0.5;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+.color-options {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.color-option {
+  width: clamp(80px, 8vw, 90px);
+  aspect-ratio: 3/2;
+  border-radius: 2px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: transform 0.2s ease;
+}
+.color-option:active {
+  transform: scale(0.97);
+}
+
+@media (hover: hover) {
+  .color-option:hover {
+    opacity: 0.95;
+  }
+}
+.new-game {
+  border-radius: 10px;
+  font-size: 1.3rem;
+  padding: 0.6em 1em;
+  margin: 10px auto auto;
+  display: block;
+  background-color: #ffffff;
+  cursor: pointer;
+  border: none;
+  transition: transform 0.2s ease;
+}
+.new-game:hover {
+  background-color: #f8f8f8;
+}
+.new-game:active {
+  transform: scale(0.97);
+  transform: scale(0.97);
+}
