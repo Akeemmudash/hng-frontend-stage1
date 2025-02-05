@@ -47,6 +47,7 @@ The Color Guessing Game is an interactive web-based game where players attempt t
 |-- script.js
 |-- assets/
     |-- color-bg.jpg
+    |-- game-screenshot.png
 ```
 
 ## How to Run the Game
@@ -61,13 +62,13 @@ The Color Guessing Game is an interactive web-based game where players attempt t
 
 The game can be hosted on any platform, such as:
 
-[Live Game Link]()
+[Live Game Link](https://x-line-color-guessing.netlify.app/)
 
 ---
 
 ### **Live Demo**
 
-You can view a live demo of the game here: [Live Demo Link]()
+You can view a live demo of the game here: [Live Demo Link](https://x-line-color-guessing.netlify.app/)
 
 ---
 
